@@ -2,6 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import Button from './Button';
+import project1 from '../assets/project1-traveland.png';
+import project2 from '../assets/project2-primecrust.png';
+import project3 from '../assets/project3-kiylo.jpg';
+
+import project4 from '../assets/project4-artify.jpg';
+import project5 from '../assets/Home.png';
 
 // Mock images (using a generic geometric placeholder since we only generated the hero)
 const getPlaceholder = (color1, color2) => `https://placehold.co/600x400/${color1}/${color2}?text=Project+Preview`;
@@ -9,30 +15,57 @@ const getPlaceholder = (color1, color2) => `https://placehold.co/600x400/${color
 const projects = [
     {
         id: 1,
-        title: "E-Commerce Platform",
-        description: "A full-featured modern e-commerce solution with high-performance product browsing, secure payment gateways, and a full admin dashboard.",
-        image: getPlaceholder("0B1C2D", "1E90FF"),
-        tags: ["React", "Node.js", "MongoDB", "Redux"],
+        title: "TraveLand",
+        description: "A modern React-based travel website featuring tour packages, car rental services, destination browsing, and responsive UI design.",
+        image: project1,
+        tags: ["React", "Node.js", "MongoDB"],
         live: "#",
         github: "#"
     },
     {
         id: 2,
-        title: "Task Management App",
-        description: "A collaborative task tracking tool built for productivity, featuring real-time updates and an intuitive drag-and-drop interface.",
-        image: getPlaceholder("0B1C2D", "3498DB"),
-        tags: ["Next.js", "TailwindCSS", "Firebase"],
-        live: "#",
-        github: "#"
+        title: "PrimeCrust",
+        description: "A full-stack food ordering website with online menu management, order processing, and secure backend integration using SQL database.",
+        image: project2,
+        tags: ["React", "Node.js", "SQL"],
+        live: "https://prime-crust.vercel.app/",
+        github: "https://github.com/manuka8/PrimeCrust"
     },
     {
         id: 3,
-        title: "AI Chat Application",
-        description: "A real-time AI-powered chat platform with contextual memory, elegant UI, and robust user authentication systems.",
-        image: getPlaceholder("152C46", "1E90FF"),
-        tags: ["React Native", "Express", "Socket.io"],
-        live: "#",
-        github: "#"
+        title: "Kiylo",
+        description: "A mobile-based e-commerce application built with React Native, featuring product management, cart system, authentication, and SQL-powered backend.",
+        image: project3,
+        tags: ["React Native", "Node.js", "SQL"],
+        live: "https://github.com/manuka8/Kiylo",
+        github: "https://github.com/manuka8/Kiylo"
+    },
+    {
+        id: 4,
+        title: "Artify",
+        description: "An artwork selling and auction mobile application allowing artists to showcase, sell, and auction creative works with secure bidding functionality.",
+        image: project4,
+        tags: ["React Native", "Node.js", "MongoDB"],
+        live: "https://github.com/manuka8/The-Arty",
+        github: "https://github.com/manuka8/The-Arty"
+    },
+    {
+        id: 5,
+        title: "StockFlow",
+        description: "An inventory and stock management system designed to track products, manage stock levels, and generate reports efficiently for businesses.",
+        image: project5,
+        tags: ["React", "Node.js", "SQL"],
+        live: "https://smartstore.lk/",
+        github: "https://github.com/manuka8/SmartStock"
+    },
+    {
+        id: 6,
+        title: "SmartApproval",
+        description: "A workflow automation system for recommendation letter approval, streamlining university processes with digital request tracking and approval management.",
+        image: getPlaceholder("112240", "5AB0FF"),
+        tags: ["React", "Node.js", "MongoDB"],
+        live: "https://github.com/manuka8/Workflow-Automation-for-Recommendation-Letter-Approval-for-a-University",
+        github: "https://github.com/manuka8/Workflow-Automation-for-Recommendation-Letter-Approval-for-a-University"
     }
 ];
 

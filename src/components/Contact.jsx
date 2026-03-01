@@ -47,25 +47,17 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="font-semibold text-white mb-1">Email</p>
-                                        <p className="text-sm">hello@manuka.dev</p>
+                                        <p className="text-sm">manukamayurajith2001@gmail.com</p>
                                     </div>
                                 </div>
-                                <div className="flex items-start text-gray-300">
-                                    <div className="bg-navy p-3 rounded-full border border-luminex/30 mr-4 text-luminex">
-                                        <Phone size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold text-white mb-1">Phone</p>
-                                        <p className="text-sm">+1 (555) 123-4567</p>
-                                    </div>
-                                </div>
+                                
                                 <div className="flex items-start text-gray-300">
                                     <div className="bg-navy p-3 rounded-full border border-luminex/30 mr-4 text-luminex">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
                                         <p className="font-semibold text-white mb-1">Location</p>
-                                        <p className="text-sm">San Francisco, CA<br />Available Worldwide</p>
+                                        <p className="text-sm">No.19/1,Enderamulla Road,Ambalangoda<br />Available Worldwide</p>
                                     </div>
                                 </div>
                             </div>

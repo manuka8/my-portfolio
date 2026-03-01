@@ -6,17 +6,17 @@ const skills = [
     {
         category: "Frontend",
         icon: <Code className="text-luminex w-8 h-8 mb-4" />,
-        items: ["React", "HTML5", "CSS3", "JavaScript (ES6+)"]
+        items: ["React", "React Native", "CSS3", "JavaScript (ES6+)"]
     },
     {
         category: "Backend",
         icon: <Server className="text-luminex w-8 h-8 mb-4" />,
-        items: ["Node.js", "Express", "RESTful APIs", "GraphQL"]
+        items: ["Node.js", "Express", "RESTful APIs"]
     },
     {
         category: "Database",
         icon: <Database className="text-luminex w-8 h-8 mb-4" />,
-        items: ["MySQL", "MongoDB", "PostgreSQL", "Redis"]
+        items: ["MySQL", "MongoDB", "PostgreSQL"]
     },
     {
         category: "Tools",
