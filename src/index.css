@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1C2D;
+  --color-navy-light: #152C46;
+  --color-luminex: #1E90FF;
+  
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-navy);
+    color: white;
+    font-family: var(--font-inter);
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.4);
+    border: 1px solid rgba(30, 144, 255, 0.3);
+  }
+  
+  .glow-border:hover {
+    box-shadow: 0 0 25px rgba(30, 144, 255, 0.8);
+    border: 1px solid rgba(30, 144, 255, 0.8);
+  }
+}
