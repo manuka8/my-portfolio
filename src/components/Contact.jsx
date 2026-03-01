@@ -57,7 +57,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="font-semibold text-white mb-1">Location</p>
-                                        <p className="text-sm">No.19/1,Enderamulla Road,Ambalangoda<br />Available Worldwide</p>
+                                        <p className="text-sm">No.19/1,Enderamulla Road,Ambalangoda</p>
                                     </div>
                                 </div>
                             </div>
