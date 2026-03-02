@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -18,11 +19,24 @@ const Contact = () => {
           )
           .then(
             (result) => {
-              alert("Message sent successfully!");
+                Swal.fire({
+                    title: "Message Sent 🚀",
+                    text: "Thank you for contacting me. I will reply soon!",
+                    icon: "success",
+                    confirmButtonText: "Awesome!",
+                    background: "#0f172a",
+                    color: "#ffffff",
+                    confirmButtonColor: "#3b82f6"
+                  });
               setFormData({ name: "", email: "", message: "" });
             },
             (error) => {
-              alert("Failed to send message.");
+                Swal.fire({
+                    title: "Oops!",
+                    text: "Something went wrong. Please try again.",
+                    icon: "error",
+                    confirmButtonColor: "#ef4444"
+                  });
             }
           );
       };
