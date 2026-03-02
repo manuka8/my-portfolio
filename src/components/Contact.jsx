@@ -2,15 +2,30 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert('Message formulation ready. Connecting to backend is required to send.');
-        setFormData({ name: '', email: '', message: '' });
-    };
+      
+        emailjs.send(
+            import.meta.env.VITE_EMAIL_SERVICE_ID,
+            import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+            formData,
+            import.meta.env.VITE_EMAIL_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              alert("Message sent successfully!");
+              setFormData({ name: "", email: "", message: "" });
+            },
+            (error) => {
+              alert("Failed to send message.");
+            }
+          );
+      };
 
     return (
         <section id="contact" className="py-24 relative z-10 w-full bg-navy/40 backdrop-blur-sm border-t border-luminex/10">

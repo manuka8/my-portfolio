@@ -12,13 +12,13 @@ const Footer = () => {
                     Built with React & ❤️
                 </p>
                 <div className="flex space-x-6">
-                    <a href="#" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
+                    <a href="https://www.linkedin.com/in/manuka-mayurajith/" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
                         <Linkedin size={20} />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
+                    <a href="https://github.com/manuka8" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
                         <Github size={20} />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
+                    <a href="manukamayurajith2001@gmail.com" className="text-gray-400 hover:text-luminex hover:glow-text transition-all">
                         <Mail size={20} />
                     </a>
                 </div>
