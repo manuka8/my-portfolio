@@ -73,7 +73,7 @@ const Hero = () => {
                         />
                         {/* Tech accents */}
                         <div className="absolute -bottom-6 -left-6 border border-luminex/50 rounded-xl p-4 backdrop-blur-md bg-navy/60 hidden md:block z-20 shadow-lg glow-border">
-                            <span className="text-luminex font-bold block text-xl">5+</span>
+                            <span className="text-luminex font-bold block text-xl">2+</span>
                             <span className="text-gray-300 text-sm">Years Experience</span>
                         </div>
                         <div className="absolute -top-6 -right-6 border border-luminex/50 rounded-xl p-4 backdrop-blur-md bg-navy/60 hidden md:block z-20 shadow-lg glow-border">
