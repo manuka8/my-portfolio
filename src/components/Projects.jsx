@@ -8,6 +8,7 @@ import project3 from '../assets/project3-kiylo.jpg';
 
 import project4 from '../assets/project4-artify.jpg';
 import project5 from '../assets/Home.png';
+import project6 from '../assets/project6-CashCompass.png';
 
 // Mock images (using a generic geometric placeholder since we only generated the hero)
 const getPlaceholder = (color1, color2) => `https://placehold.co/600x400/${color1}/${color2}?text=Project+Preview`;
@@ -60,13 +61,23 @@ const projects = [
     },
     {
         id: 6,
+        title: "CashCompass",
+        description: "Cash Compass is a smart expense tracking app that helps users manage income, expenses, and budgets while providing clear financial insights through analytics and reports.",
+        image: project6,
+        tags: ["React Native", "Expo", "SuperBase"],
+        live: "https://expo.dev/artifacts/eas/cxCnPvUwwtGJpw2AjnzHEb.apk",
+        github: "https://github.com/manuka8/CashCompass"
+    },
+    {
+        id: 7,
         title: "SmartApproval",
         description: "A workflow automation system for recommendation letter approval, streamlining university processes with digital request tracking and approval management.",
         image: getPlaceholder("112240", "5AB0FF"),
         tags: ["React", "Node.js", "MongoDB"],
         live: "https://github.com/manuka8/Workflow-Automation-for-Recommendation-Letter-Approval-for-a-University",
         github: "https://github.com/manuka8/Workflow-Automation-for-Recommendation-Letter-Approval-for-a-University"
-    }
+    },
+    
 ];
 
 const Projects = () => {
