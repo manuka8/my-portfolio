@@ -8,7 +8,7 @@ import project3 from '../assets/project3-kiylo.jpg';
 
 import project4 from '../assets/project4-artify.jpg';
 import project5 from '../assets/Home.png';
-import project6 from '../assets/project6-CashCompass.png';
+import project6 from '../assets/project6-CashCompass.jpeg';
 
 // Mock images (using a generic geometric placeholder since we only generated the hero)
 const getPlaceholder = (color1, color2) => `https://placehold.co/600x400/${color1}/${color2}?text=Project+Preview`;
