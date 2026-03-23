@@ -9,6 +9,7 @@ import project3 from '../assets/project3-kiylo.jpg';
 import project4 from '../assets/project4-artify.jpg';
 import project5 from '../assets/Home.png';
 import project6 from '../assets/project6-CashCompass.jpeg';
+import project7 from '../assets/project7-ActiveplusFitness.png';
 
 // Mock images (using a generic geometric placeholder since we only generated the hero)
 const getPlaceholder = (color1, color2) => `https://placehold.co/600x400/${color1}/${color2}?text=Project+Preview`;
@@ -70,6 +71,15 @@ const projects = [
     },
     {
         id: 7,
+        title: "ActivePlusFitness",
+        description: "ActivePlusFitness is a modern gym and fitness platform designed to help individuals achieve their health and wellness goals. The website provides information about gym services, workout programs, and membership plans in a simple and user-friendly interface. Users can explore fitness tips, connect with trainers, and stay motivated on their fitness journey. ActivePlusFitness focuses on promoting a healthy lifestyle by combining technology with personalized fitness experiences.",
+        image: project7,
+        tags: ["React", "Node.js", "PostgreSQL","SuperBase"],
+        live: "https://activeplusfitness.vercel.app",
+        github: "https://github.com/manuka8/ActivePlusFitness.git"
+    },
+    {
+        id: 8,
         title: "SmartApproval",
         description: "A workflow automation system for recommendation letter approval, streamlining university processes with digital request tracking and approval management.",
         image: getPlaceholder("112240", "5AB0FF"),
